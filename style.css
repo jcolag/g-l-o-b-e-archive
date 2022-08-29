@@ -1,0 +1,95 @@
+:root {
+  --background: #7dacc5;
+  --neutral: #f1ebd9;
+  --foreground: #49281b;
+  --error: #aa4c5a;
+  --good: #7dc596;
+  --ok:  #c5ba7d;
+  --bad: #c4d9e5;
+}
+
+body {
+  background-color: var(--background);
+  display: grid;
+  font-size: 1.25em;
+  justify-content: center;
+  text-align: center;
+}
+
+h1 {
+  color: var(--neutral);
+  font-style: italic;
+}
+
+svg {
+  height: 15em;
+}
+
+path {
+  fill: var(--foreground);
+}
+
+.update {
+  height: 1.5em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+.names {
+  float: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 33%;
+}
+
+.flag {
+  float: left;
+  width: 1.5em;
+}
+
+.distance {
+  float: left;
+  width: calc(33% - 3em);
+}
+
+.direction {
+  float: left;
+  width: 1.5em;
+}
+
+.total-distance {
+  float: left;
+  width: 33%;
+}
+
+.status-good {
+  color: var(--good);
+  text-shadow: var(--foreground) 1px 1px 3px;
+}
+
+.status-ok {
+  color: var(--ok);
+  text-shadow: var(--foreground) 1px 1px 3px;
+}
+
+.status-worry {
+  color: var(--error);
+  text-shadow: var(--foreground) 1px 1px 3px;
+}
+
+.status-fail {
+  color: var(--bad);
+  text-shadow: var(--neutral) 1px 1px 3px;
+}
+
+.error {
+  color: var(--error);
+  text-shadow: var(--neutral) 1px 1px 3px;
+}
+
+.hidden {
+  display: none;
+}
+
