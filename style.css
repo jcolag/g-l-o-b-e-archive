@@ -10,6 +10,7 @@
 
 body {
   background-color: var(--background);
+  background-image: url('./square_bg.png');
   display: grid;
   font-size: 1.25em;
   justify-content: center;
